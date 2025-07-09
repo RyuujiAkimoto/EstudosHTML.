@@ -1,8 +1,8 @@
 body {
-   font-family: Arial, sans-serif;
-   margin: 0;
-   padding: 0;
-   background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
 }
 
 header {
@@ -13,18 +13,44 @@ header {
 }
 
 nav a {
-   color: #fff;
-   margin: 0 10px;
-   text-decoration: none;
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  display: inline-block;
 }
 
 main {
-    padding: 20px;
+  padding: 20px;
 }
 
 footer {
-    background-color: #222;
-    color: white;
-    text-align: center;
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Responsividade para telas menores */
+
+@media screen and (max-width: 600px) {
+  header h1 {
+    font-size: 24px;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  main {
     padding: 10px;
+  }
+
+  .post h2 {
+    font-size: 20px;
+  }
+
+  .post p {
+    font-size: 16px;
+  }
 }
